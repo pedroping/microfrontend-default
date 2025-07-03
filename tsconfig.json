@@ -16,17 +16,14 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "@shared": [
-        "projects/shared/src/public-api.ts",
-        "dist/shared"
+      "@shared": ["projects/shared/src/public-api.ts", "dist/shared"],
+      "mfeBasket/Module": [
+        "projects/mfe-basket/src/app/basket/basket.module.ts"
       ]
     },
     "target": "es2020",
     "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ]
+    "lib": ["es2020", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

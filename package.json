@@ -5,12 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "start:shell": "ng serve shell  -o --port 5000",
+    "start:mfe": "ng serve mfe-basket -o --port 4201",
+    "start:all": "npx concurrently \"npm run start:mfe\" \"npm run start:shell\" ",
     "watch": "ng build --watch --configuration development",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,
   "dependencies": {
-    "@angular-architects/module-federation": "^14.2.3",
     "@angular/animations": "~13.3.0",
     "@angular/common": "~13.3.0",
     "@angular/compiler": "~13.3.0",

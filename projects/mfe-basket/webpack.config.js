@@ -46,6 +46,7 @@ module.exports = {
         "@shared": {
           singleton: true,
           import: "./projects/shared/src/public-api.ts",
+          requiredVersion: "auto",
         },
       },
     }),
